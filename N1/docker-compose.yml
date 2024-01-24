@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  ubuntu:
+    image: ubuntu:22.04
+    container_name: comp_ling_first_lab_work
+    user: root
+    stdin_open: true
+    tty: true
+    volumes:
+      - "./:/home/user/comp_ling_first_lab_work"
