@@ -12,8 +12,8 @@
 12. `locale-gen ru_RU`
 13. `locale-gen ru_RU.UTF-8`
 14. `update-locale`
-15. `vim ~/.bash_profile`; `LANG="en_IN.utf8" export LANG`; `source ~/.bash_profile`
-16. `cd /home/user/comp_ling_first_lab_work`
+15. `vim ~/.bash_profile`; `LANG="ru_RU.utf8" export LANG`; `source ~/.bash_profile`
+16. `cd /home/user/comp_ling_third_lab_work`
 17. `python -m venv venv`
 18. `source venv/bin/activate`
 19. `pip install natasha`
