@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: 'mongo:6.0.13'
+    ports:
+      - '27019:27017'
+    volumes:
+      - './data/db:/data/db'
+  ubuntu:
+    image: ubuntu:22.04
+    container_name: comp_ling_term_work
+    user: root
+    stdin_open: true
+    tty: true
+    environment:
+      - MONGO_CONNECTION_STRING=mongodb://mongo:27017/
+    volumes:
+      - "./:/home/user/comp_ling_term_work"
+      - "/home/user/comp_ling_term_work/data/db"
