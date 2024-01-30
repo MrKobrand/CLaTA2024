@@ -40,7 +40,7 @@ class MongoProvider(DatabaseProvider):
             'url': patent.url,
             'abstract': patent.abstract,
             'description': patent.description,
-            'cliams': patent.claims,
+            'claims': patent.claims,
             'problems': patent.problems
         })
 
