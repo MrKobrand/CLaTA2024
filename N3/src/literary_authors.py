@@ -39,9 +39,6 @@ if __name__ == '__main__':
 
     for span in doc.spans:
         span.normalize(morph_vocab)
-
-    for span in doc.spans:
-        span.normalize(morph_vocab)
         if span.type == PER:
             span.extract_fact(names_extractor)
 
